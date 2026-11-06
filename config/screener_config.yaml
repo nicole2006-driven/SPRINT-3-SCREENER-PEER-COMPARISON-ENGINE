@@ -1,0 +1,42 @@
+metrics:
+  roe_min: "return_on_equity_pct"
+  de_max: "debt_to_equity"
+  fcf_min: "free_cash_flow_cr"
+  rev_cagr_5yr_min: "revenue_cagr_5yr"
+  pat_cagr_5yr_min: "pat_cagr_5yr"
+  opm_min: "operating_profit_margin_pct"
+  pe_max: "pe_ratio"
+  pb_max: "pb_ratio"
+  div_yield_min: "dividend_yield_pct"
+  icr_min: "interest_coverage"
+  market_cap_min: "market_cap_crore"
+  net_profit_min: "net_profit"
+  eps_cagr_min: "eps_cagr_5yr"
+  asset_turnover_min: "asset_turnover"
+  sales_min: "sales"
+
+presets:
+  quality_compounder:
+    roe_min: 15.0
+    de_max: 1.0
+    fcf_min: 0.0
+  value_pick:
+    pe_max: 30.0
+    pb_max: 5.0
+    de_max: 2.0
+    div_yield_min: 0.5
+  growth_accelerator:
+    opm_min: 20.0
+    roe_min: 15.0
+    de_max: 2.0
+  dividend_champion:
+    div_yield_min: 1.5
+    div_payout_max: 85.0
+    fcf_min: 0.0
+  debt_free_blue_chip:
+    de_max: 0.10
+    roe_min: 12.0
+  turnaround_watch:
+    rev_cagr_3yr_min: 5.0
+    fcf_latest_positive: true
+    de_declining: true
